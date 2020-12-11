@@ -1,3 +1,33 @@
+html {
+  background-color: #121212;
+  
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+}
+
+h1,h2,h3,h4,h5 {
+  color: #02bfe7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +65,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#explanation {
+  border-left: 2px solid #0b3d91;
+  padding-left: 1rem;
+  text-align: left;
 }
