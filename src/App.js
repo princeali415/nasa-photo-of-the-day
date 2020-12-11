@@ -5,6 +5,12 @@ import axios from 'axios'
 import Image from '../src/components/img.js'
 import Video from '../src/components/video.js'
 import Explanation from '../src/components/explanation.js'
+import styled from 'styled-components'
+
+const AppStyled = styled.div`
+background-color: ${pr => pr.theme.backgroundColor};
+color: ${pr => pr.theme.primaryTextColor};
+`
 
 function App() {
 
@@ -22,12 +28,12 @@ function App() {
 
 
   return (
-    <div className="App">
+    <AppStyled className="App">
       <h1>NASA Photo of The Day</h1>
       <h2>{info.title}</h2>
       { (info.media_type === 'video') ? <Video info={info} /> : <Image info={info} /> }
       <Explanation info={info} />
-    </div>
+    </AppStyled>
   );
 }
 
